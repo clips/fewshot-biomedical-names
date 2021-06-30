@@ -49,7 +49,7 @@ class Encoder(BaseFNN):
             if pretrained:
                 embeddings = self.pretrained_name_embeddings
             else:
-                embeddings = self.extract_online_dan_embeddings(prune=False)
+                embeddings = self.extract_online_dan_embeddings()
 
         clusters = self.clusters if total else self.training_clusters
 

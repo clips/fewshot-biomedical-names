@@ -19,7 +19,7 @@ from tqdm import tqdm
 
 class EncoderBase:
 
-    def __init__(self, data_infile, fasttext_model_path):
+    def __init__(self, data_infile, fasttext_model_path, triplet_margin=0.1):
 
         self.loss_weights = {'siamese': 1,
                              'grounding': 1}
@@ -38,7 +38,7 @@ class EncoderBase:
         self.pretrained_name_embeddings = self.vectorize.create_reach_object(all_names)
 
         self.amount_negative_names = 1
-        self.triplet_margin = 0.1
+        self.triplet_margin = triplet_margin
         self.anchor_margin = 0
 
         torch.autograd.set_detect_anomaly(True)
