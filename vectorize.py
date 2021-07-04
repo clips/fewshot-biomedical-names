@@ -23,7 +23,6 @@ class Vectorize:
 
         self.pretrained_name_embeddings = None
         self.construct_oov = False
-        self.fasttext_model = None
 
     def allow_construct_oov(self):
 
