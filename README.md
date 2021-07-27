@@ -22,7 +22,7 @@ Our example script requires a path to this downloaded model.
 
 ## Data
 
-We demonstrate our code using the ICD-10 data. We have extracted this data using source files which can be found at
+Since we aren't allowed to publicly share SNOMED-CT data, we demonstrate our code using only the ICD-10 data. We have extracted this data using source files which can be found at
  https://github.com/kamillamagna/ICD-10-CSV.
 
 The script **data/icd_chapters.py** has used these source files to create **data/icd10.json**.
